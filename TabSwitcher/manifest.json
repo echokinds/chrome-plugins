@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Switcher",
+  "version": "1.0",
+  "description": "Switch between the last two active tabs using keyboard shortcut (Alt+Y).",
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-tab-switcher": {
+      "suggested_key": {
+        "default": "Alt+Y",
+        "windows": "Alt+Y",
+        "mac": "Alt+Y",
+        "chromeos": "Alt+Y",
+        "linux": "Alt+Y"
+      },
+      "description": "Toggle between the last two active tabs"
+    }
+  }
+}
